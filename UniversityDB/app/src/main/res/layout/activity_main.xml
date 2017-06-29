@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.basma.universitydb.MainActivity">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/fac"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Faculty :"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true"
+        android:background="#f09833"
+
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/dep"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Department :"
+        android:textAlignment="center"
+        android:layout_below="@+id/fac"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentLeft="true"
+        android:background="#f09833"
+
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/search_staff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Staff name :"
+        android:textAlignment="center"
+        android:layout_below="@+id/dep"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentLeft="true"
+        android:background="#f09833"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/course"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Course :"
+        android:textAlignment="center"
+        android:layout_below="@+id/search_staff"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentLeft="true"
+        android:background="#f09833"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerfac"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/fac"
+        android:layout_toEndOf="@+id/fac"
+        android:layout_alignParentRight="true"
+
+        />
+    <Spinner
+        android:id="@+id/spinnerdep"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/dep"
+        android:layout_toEndOf="@+id/dep"
+        android:layout_below="@+id/spinnerfac"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentRight="true"
+
+
+        />
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnerstaff"
+        android:layout_toRightOf="@+id/search_staff"
+        android:layout_toEndOf="@+id/search_staff"
+        android:layout_below="@id/spinnerdep"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/spinnercourse"
+        android:layout_toRightOf="@+id/course"
+        android:layout_toEndOf="@+id/course"
+        android:layout_below="@id/spinnerstaff"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/signin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:text="Log In"
+        android:layout_below="@id/course"
+        android:layout_marginTop="15dp"
+
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/signup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentRight="true"
+        android:text="Sign Up"
+        android:layout_below="@id/spinnercourse"
+        android:layout_marginTop="15dp"
+
+        />
+
+</RelativeLayout>
